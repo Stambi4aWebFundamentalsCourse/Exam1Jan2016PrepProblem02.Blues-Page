@@ -1,0 +1,122 @@
+﻿@font-face {
+    font-family: RicksAmericanNF;
+    src:url("fonts/RicksAmericanNF.ttf");
+}
+
+body {
+    background-color: black;
+    #wrapper {
+        width: 960px;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #FFA300;
+        header {
+            h1 {
+                font-family:RicksAmericanNF;
+                font-size: 60px;
+                letter-spacing:18px;
+                text-align: center;
+            }
+            nav {
+                ul {
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: space-around;
+                    list-style-type: none;
+                    li {
+                        a {
+                            font-family:RicksAmericanNF;
+                            letter-spacing:5px;
+                            font-size: 30px;
+                            color: #FFA300;
+                            text-decoration: none;
+                            padding:3px 50px;
+                            &:hover {
+                                color: black;
+                                border-radius: 20px;
+                                background-color: #FFA300;
+                            }
+                        }  
+                    } 
+                }
+            }
+        }
+        main {
+            background-color: #3C3C3C;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            section {
+                width: 60%;
+                padding: 10px;
+                article {
+                    padding: 5px;
+                    margin-bottom: 30px;
+                    h2 {
+                        text-align: center;
+                        color: #FFA300;
+                        font-size: 23px;
+                    }
+                    img {
+                        width: 45%;
+                        float:left;
+                        margin-right:5px;
+                    }
+                    p{
+                        display: inline;
+                        a {
+                            color: #FFA300;
+                            font-style: italic;
+                            font-weight: 600;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            aside {
+                width: 30%;
+                ul {
+                    display: block;
+                    list-style-type: none;
+                    margin-right: 40px;
+                    margin-top: 60px;
+                    li {
+                        display: block;
+                        margin-bottom: 15px;
+                        img {
+                            width: 100%;
+                            border-radius: 10px;
+                            border: 1px solid #FFA300;
+                            margin-bottom:-22px;
+                        }
+                        span {
+                            background-color: rgba(0, 0, 0, 0.7);
+                            display: inline-block;
+                            text-align: center;
+                            width: 100%;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            border-bottom:1px solid #FFA300;
+                            border-left:1px solid #FFA300;
+                            border-right:1px solid #FFA300;
+                            font-weight: bolder;
+                        }
+                    }
+                    &:hover {
+                        span {
+                            background-color: #FFA300;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            h6 {
+                text-align: center;
+            }
+        }
+    }
+}
